@@ -1,0 +1,33 @@
+@use "~/base";
+
+.root {
+}
+
+.closeButtonStyle {
+}
+
+.contentContainer {
+    padding: unset !important;
+    width: 30rem;
+    border-radius: 0.5rem;
+
+    @media (max-width: 600px) {
+        width: 20rem;
+        max-width: 90% !important;
+    }
+
+    .headerContainer {
+        padding: 1rem;
+        border-bottom: 1px solid base.$borderColorLight;
+    }
+
+    .formContainer {
+        padding: 1rem 1.5rem;
+        padding-bottom: 2rem;
+        .formElementStyle {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+    }
+}

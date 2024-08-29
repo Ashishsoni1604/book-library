@@ -1,0 +1,22 @@
+@use "~/base";
+
+.buttonStyle {
+    padding: 0.5rem 1rem;
+    min-width: 5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include base.button;
+    background: base.$primaryButtonColor;
+    color: base.$primaryButtonTextColor;
+    border-radius: 5px;
+    &.fullWidthStyle {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &:disabled {
+        background: base.$primaryButtonColorDisabled;
+        cursor: not-allowed;
+        color: base.$mainTextColorDisabled;
+    }
+}
